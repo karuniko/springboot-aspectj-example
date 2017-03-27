@@ -10,7 +10,7 @@ Application contains of 3 parts:
 How to run:
 - clone this repo `git clone https://github.com/karuniko/springboot-aspectj-example.git`
 - `mvn clean install`
-- `cd jar-module`
+- `cd war-module`
 - `mvn spring-boot:run -Drun.jvmArguments="-javaagent:${pom.basedir}\aspectjweaver-1.8.10.jar -javaagent:${pom.basedir}\spring-instrument-4.3.7.RELEASE.jar -Dserver.port=8080 -Dserver.contextPath=/app"`
 
 Expected result:
