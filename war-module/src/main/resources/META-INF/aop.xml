@@ -1,0 +1,16 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+
+    <!-- turn on logging when you need debug eclipse aspects -->
+    <!--weaver options="-verbose -showWeaveInfo -debug"-->
+    <weaver>
+        <!-- only weave classes in our application-specific packages -->
+        <include within="com.example..*" />
+    </weaver>
+
+    <aspects>
+        <!-- weave in just this aspect -->
+        <aspect name="com.example.SomeTestAspect" />
+    </aspects>
+
+</aspectj>
